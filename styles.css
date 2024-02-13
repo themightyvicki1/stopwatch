@@ -1,3 +1,7 @@
+body {
+  background-color: #f5f5f5;
+}
+
 .container {
   background-color: #e1eacd;
   text-align: center;
@@ -5,7 +9,7 @@
   margin: 50px auto;
   padding: 30px 30px;
   padding-bottom: 0;
-  border: 3px solid #bad8b6;
+  border: 5px solid #bad8b6;
   border-radius: 4px;
   color: #01352c;
   font-family: "Poppins", sans-serif;
@@ -14,10 +18,12 @@
 .container h1 {
   letter-spacing: 3px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .time {
-  font-size: 30px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .button {
@@ -26,6 +32,7 @@
   font-weight: 500;
   background-color: #01352c;
   border: 2px solid #01352c;
+  border-radius: 2px;
   padding: 4px 10px;
 }
 
@@ -38,4 +45,14 @@
 footer {
   font-size: 10px;
   margin-top: 30px;
+  color: #01352c;
+}
+
+footer a {
+  text-decoration: none;
+  color: #01352c;
+}
+
+footer span {
+  font-size: 8px;
 }
