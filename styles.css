@@ -1,0 +1,41 @@
+.container {
+  background-color: #e1eacd;
+  text-align: center;
+  width: 300px;
+  margin: 50px auto;
+  padding: 30px 30px;
+  padding-bottom: 0;
+  border: 3px solid #bad8b6;
+  border-radius: 4px;
+  color: #01352c;
+  font-family: "Poppins", sans-serif;
+}
+
+.container h1 {
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+
+.time {
+  font-size: 30px;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  color: #61b390;
+  font-weight: 500;
+  background-color: #01352c;
+  border: 2px solid #01352c;
+  padding: 4px 10px;
+}
+
+.button:hover {
+  color: #01352c;
+  background-color: #61b390;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 10px;
+  margin-top: 30px;
+}
