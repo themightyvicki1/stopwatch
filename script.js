@@ -4,7 +4,7 @@ let intervalId;
 //function starts the timer
 function startTimer() {
   startTime = Date.now();
-  //to update
+  //to update, go to this function
   intervalId = setInterval(updateTime, 1000);
 }
 
@@ -31,8 +31,8 @@ function updateTime() {
     .padStart(2, "0")
     .slice(0, 2);
 
-  if (minutes === 1) {
-    alert("Take a break!");
+  if (minutes === 52) {
+    alert("take a break!");
   }
   if (minutes < 10) {
     document.querySelector("#minute").textContent = `0${Math.trunc(
