@@ -26,12 +26,14 @@ function updateTime() {
   const minutes = Math.round(currentTime % 3600000) / 60000;
   const seconds = Math.round(currentTime % 60000) / 1000;
   //const milliseconds = Math.floor(currentTime % 1000) / 10;
-
   document.querySelector("#hour").textContent = hours
     .toString()
     .padStart(2, "0")
     .slice(0, 2);
 
+  if (minutes === 1) {
+    alert("Take a break!");
+  }
   if (minutes < 10) {
     document.querySelector("#minute").textContent = `0${Math.trunc(
       minutes.toString().padStart(2, "0").slice(0, 2)
@@ -52,11 +54,6 @@ function updateTime() {
       seconds.toString().padStart(2, "0").slice(0, 2)
     );
   }
-
-  /*document.getElementById("count").textContent = milliseconds
-    .toString()
-    .padStart(2, "0")
-    .slice(0, 2);*/
 }
 
 //add event listeners to each button
