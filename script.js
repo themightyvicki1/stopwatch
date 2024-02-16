@@ -39,18 +39,9 @@ function pauseTimer() {
 
 function updateTime() {
   currentTime = Date.now() - startTime;
-  hours = Math.round(currentTime / 3600000);
-  minutes = Math.round(currentTime % 3600000) / 60000;
-  seconds = Math.round(currentTime % 60000) / 1000;
-
-  if (currentTime === 10) {
-    alert("take a break");
-  }
-  //const milliseconds = Math.floor(currentTime % 1000) / 10;
-  document.querySelector("#hour").textContent = hours
-    .toString()
-    .padStart(2, "0")
-    .slice(0, 2);
+  hours = Math.floor(currentTime / 3600000);
+  minutes = Math.floor(currentTime % 3600000) / 60000;
+  seconds = Math.floor(currentTime % 60000) / 1000;
 
   if (minutes < 10) {
     document.querySelector("#minute").textContent = `0${Math.trunc(
@@ -72,6 +63,11 @@ function updateTime() {
       seconds.toString().padStart(2, "0").slice(0, 2)
     );
   }
+
+  document.querySelector("#hour").textContent = hours
+    .toString()
+    .padStart(2, "0")
+    .slice(0, 2);
 }
 
 //add event listeners to each button
